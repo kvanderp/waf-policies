@@ -1,0 +1,39 @@
+{
+	"policy": {
+		"name": "policy-fund-1",
+		"description": "Policy Example - Rapid Deployment",
+		"template": {
+			"name": "POLICY_TEMPLATE_RAPID_DEPLOYMENT"
+		},
+		"enforcementMode": "blocking",
+		"server-technologies": [
+			{
+				"serverTechnologyName": "MySQL"
+			},
+			{
+				"serverTechnologyName": "Unix/Linux"
+			},
+			{
+				"serverTechnologyName": "MongoDB"
+			}
+		],
+		"signature-settings": {
+			"signatureStaging": false
+		},
+		"policy-builder": {
+			"learnOnlyFromNonBotTraffic": false
+		},
+		"response-pages": [
+            {
+                "responsePageType": "ajax",
+                "ajaxEnabled": true,
+                "ajaxPopupMessage": "My customized popup message! Your support ID is: <%TS.request.ID()%>"
+            }
+            ]
+	},
+	"modifications": [
+	    
+	    
+	    ] 
+
+}
